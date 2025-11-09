@@ -1,29 +1,32 @@
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .navbar-header {
     display: flex;
     height: auto;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #0000ffaa, #ffffffaa);
+    background: linear-gradient(90deg, #ffffff3d, #0000ff4a, #ffffffaa);
     position: fixed;
     width: 100%;
     top: 0;
     padding: 16px;
     color: white;
+    box-shadow: 0 2px 5px #000000aa;
 
     > * {
         margin: 0 64px;
     }
 
     h1 {
-        font-family: cursive;
+        font-family: "Galada", cursive;
         font-style: italic;
+        font-weight: normal;
     }
 
     ul {
@@ -48,12 +51,14 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 5px 5px 3px #00000055;
     height: 100%;
     background: url('./assets/capa.jpg') no-repeat center center/cover;
 
     h1 {
         height: auto;
         margin-top: auto;
+        margin-bottom: auto;
         align-self: center;
         justify-self: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,7 +70,7 @@ html, body {
 
         padding: 32px;
         background-color: #FFFFFF22;
-        width: 100%;
+        width: -webkit-fill-available;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,6 +86,8 @@ html, body {
             gap: 16px;
             width: 100%;
             max-width: 85vw;
+            padding-top: 32px;
+            padding-bottom: 32px;
     
             div {
                 display: flex;
@@ -91,28 +98,33 @@ html, body {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 color: gray;
                 padding: 0;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 font-weight: 200;
 
                 input {
                     height: 1rem;
                     width: -webkit-fill-available;
                     border-radius: 8px;
-                    border: 1px solid gray;
                     padding: 8px;
-                    font-size: 1rem;
-                    border: 1.5px solid gray;
+                    font-size: 1.5rem;
+                    border: 2px solid lightgray;
+                    padding-bottom: 16px;
+                    padding-top: 16px;
+                    color: gray;
                 }
-
+                
                 button {
+                    padding-bottom: 16px;
+                    padding-top: 16px;
                     width: 100%;
-                    height: 2.1rem;
+                    height: auto;
                     background-color: orange;
                     border: none;
                     border-radius: 8px;
-                    font-weight: bolder;
+                    font-weight: bold;
                     color: white;
-                    font-size: x-large;
+                    font-size: large;
+                    cursor: pointer;
                 }
             }
         }
@@ -121,6 +133,28 @@ html, body {
 }
 
 .next-experian {
+    padding: 64px 48px;
+
+    display: flex;
+    gap: 2rem;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-family: 'Galada', cursive;
+        font-weight: normal;
+    }
+
+    hr {
+        border: 3px solid orange;
+        border-radius: 50px;
+        width: 24rem;
+        margin: 0;
+    }
 
 }
 
